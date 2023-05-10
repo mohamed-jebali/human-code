@@ -1,0 +1,71 @@
+1- Ti sei appena registrato a Netflix
+2- Avvia il prcesso per il login
+3- Inserisci le credenziali
+4- Avvia il processo di profilazione
+5- Verifica se la disponibilità di tempo dell'utente è maggiore o minore di 1 ora
+6- Se maggiore o uguale a 1 ora: Apri la lista di tutti i contenuti maggiori o uguali di un ora nel database di Netflix
+    6.1- Verifica se l'utente preferisce guardare film, serie tv oppure è indeciso
+        A) Se film: Apri la lista di tutti i film maggiori o uguali a un ora
+            Se la lista è vuota:
+                Allora torna al punto 5
+        B) Se serie tv: Apri la lista di tutte le serie tv maggiori o uguali a un ora
+            Se la lista è vuota:
+                Allora torna al punto 5
+        C) Se indeciso: Apri entrambe le liste
+            Se la lista è vuota:
+                Allora torna al punto 5
+7- Se minore: Apri la lista di tuttii i contenuti minori di un ora nel database di Netflix
+    7.1- Verifica se l'utente preferisce guardare film, serie tv oppure è indeciso
+        A) Se film: Apri la lista di tutti i film minore a un ora
+            Se la lista è vuota:
+                Allora torna al punto 5 
+        B) Se serie tv: Apri la lista di tutte le serie tv minori a un ora
+            Se la lista è vuota:
+                Allora torna al punto 5
+        C) Se indeciso: Apri entrambe le liste
+            Se la lista è vuota:
+                Allora torna al punto 5
+
+8- Una volta verificati il punto 6 o 7
+    Verifica se preferisce il genere drammatico, horror, documentari oppure FIDATI DI NETFLIX
+
+9- Se drammatico: Apri la lista di tutti i contenuti drammatici nel database di Netflix
+    A) Se al punto 6 o 7 ha scelto film: Apri la lista di tutti i film drammatici
+        Se la lista è vuota:
+            Allora torna al punto 8
+    B) Se al punto 6 o 7 ha scelto serie tv: Apri la lista di tutte le serie tv drammatiche
+        Se la lista è vuota:
+            Allora torna al punto 8
+    C) Se indeciso: Apri entrambe le liste
+        Se la lista è vuota:
+            Allora torna al punto 8
+
+10- Se horror: Apri la lista di tutti i contenuti horror nel database di Netflix
+    A) Se al punto 6 o 7 ha scelto film: Apri la lista di tutti i film horror
+        Se la lista è vuota:
+            Allora torna al punto 8 
+    B) Se al punto 6 o 7 ha scelto serie tv: Apri la lista di tutte le serie tv horror
+        Se la lista è vuota:
+            Allora torna al punto 8
+    C) Se indeciso: Apri entrambe le liste
+        Se la lista è vuota:
+            Allora torna al punto 8
+
+
+11- Se documentario: Apri la lista di tutti i documentari nel database di Netflix
+    A) Se al punto 6 o 7 ha scelto film: Apri la lista di tutti i film documentari
+        Se la lista è vuota:
+            Allora torna al punto 8
+    B) Se al punto 6 o 7 ha scelto serie tv: Apri la lista di tutte le serie tv documentari
+        Se la lista è vuota:
+            Allora torna al punto 8
+    C) Se indeciso: Apri entrambe le liste
+        Se la lista è vuota:
+            Allora torna al punto 8
+
+12- Se FIDATI DI NETFLIX
+    ALLORA: Verifica la scelta nei punti 6 o 7
+    A) Se al punto 6 o 7 ha scelto film: Apri un contenuto casuale dalla lista dei film non ancora visualizzati
+    B) Se al punto 6 o 7 ha scelto serie tv: Apri un contenuto casuale dalla lista delle serie tv non ancora visualizzati
+    C) Se non piace il contenuto ALLORA torna al punto 8
+
